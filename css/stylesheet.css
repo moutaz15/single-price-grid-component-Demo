@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  height: 100vh;
+  background-color: #98a6bd;
+  font-size: 1.6rem;
+  font-family: "karla", sans-serif;
+  position: relative; }
+
+.section-price {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 59.37em) {
+    .section-price {
+      display: block; } }
+
+.header {
+  padding: 4rem 3.2rem;
+  background-color: #fff; }
+  .header__primary {
+    color: #2ab2af;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: 700; }
+  .header__secondary {
+    color: #c0df34;
+    font-size: 1.8rem;
+    margin-bottom: 1rem; }
+  .header p {
+    color: #98a6bd;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 1.4rem; }
+
+.cta-why {
+  color: #fff;
+  display: flex;
+  justify-content: start; }
+  @media only screen and (max-width: 59.37em) {
+    .cta-why {
+      display: block; } }
+
+.cta {
+  padding: 3.2rem;
+  background-color: #2ab2af;
+  width: 50%; }
+  @media only screen and (max-width: 59.37em) {
+    .cta {
+      width: 100%; } }
+  .cta__price {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 0.8rem; }
+  .cta__price-value {
+    font-size: 2.4rem;
+    font-weight: 700; }
+  .cta span {
+    color: rgba(207, 215, 221, 0.444);
+    font-size: 1.4rem; }
+  .cta__text {
+    margin-bottom: 2rem; }
+  .cta__btn, .cta__btn:link, .cta__btn:visited {
+    display: block;
+    width: 90%;
+    padding: 1.4rem;
+    background-color: #c0df34;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+    color: #fff;
+    cursor: pointer; }
+  .cta__btn:hover, .cta__btn:active {
+    background-color: #cde55d;
+    transform: translateY(-2px); }
+
+.why {
+  padding: 3.2rem;
+  background-color: #6ac9c7;
+  width: 50%; }
+  @media only screen and (max-width: 59.37em) {
+    .why {
+      width: 100%; } }
+  .why__list {
+    list-style: none;
+    margin-top: 2rem;
+    color: rgba(207, 215, 221, 0.94);
+    font-size: 1.2rem; }
+    .why__list-item:not(:last-child) {
+      margin-bottom: 0.5rem; }

@@ -1,0 +1,58 @@
+///////////////////////////////// Colors
+$color-primary: #2ab2af;
+$color-secondary: #c0df34;
+
+///////////////////////// GREYS
+$light-grey: #e6eff5;
+$dark-grey: hsl(218, 22%, 67%);
+
+$bp-largest: 68.75em; // 1100px
+$bp-large: 59.37em;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  height: 100vh;
+
+  background-color: $dark-grey;
+
+  font-size: 1.6rem;
+  font-family: "karla", sans-serif;
+  position: relative;
+}
+
+.section-price {
+  width: 40%;
+
+  //background-color: orange;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    display: block;
+  }
+}
